@@ -40,3 +40,228 @@ html {
 body {
   line-height: 1;
 }
+
+.body__wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  /* как по другому ограничить контент? Это по БЕМ нормально то что я ограничивю ширину блоку? мне кажется нет..... */
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  padding: 50px 0px 50px 0px;
+}
+.header {
+  background-color: #445162;
+}
+.header__info {
+  max-width: 650px;
+}
+.header__title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.header__list {
+}
+.header__list-item {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  left: 35px;
+}
+.header__list-item::before {
+  content: url(../img/icon.png);
+  position: absolute;
+  left: -35px;
+}
+.header__img {
+  /* не понимаю почему это  не работает ? хотел поставить ширину чтоб при вставке другой картинки она была такой же ширины но если я робую вставить картинку больше она вставляется со своим большим размером*/
+  /* flex-basis: 469px; */
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.main__what-is-it {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  padding: 50px 0px 45px 0px;
+}
+.what-is-it {
+}
+
+.what-is-it__img {
+  /* когда я напротив картинки добавляю больше текста -картинка начинает расстягиваться по высоте.Это норм ? или как это пофиксить? */
+}
+.what-is-it__desc-text {
+}
+.h2-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #445161;
+}
+.what-is-it__title {
+  margin-bottom: 36px;
+}
+.what-is-it__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.what-is-it__text_first-p {
+  margin-bottom: 30px;
+  /* думаю это не гибкое решение) */
+}
+
+.colums-block {
+  background-color: #f5f5f5;
+}
+.colums-block__title {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* просто попробовал другим способом центр сделать */
+  padding: 48px 0px 30px 0px;
+}
+.colums-block__body {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 30px;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.colums-block__content {
+  display: flex;
+}
+.colums-block__desc-block {
+  max-width: 350px;
+}
+.colums-block__img {
+  margin-right: 15px;
+}
+.colums-block__sub-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #445161;
+  margin-bottom: 15px;
+}
+.colums-block__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.container-for-cards {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.cards-block {
+  background-color: #fff;
+}
+.cards-block__title {
+  display: flex;
+  justify-content: center;
+  padding: 49px 0px 30px 0px;
+}
+.cards-block__body {
+  max-width: 900px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 280px;
+  background-color: #445162;
+  align-items: center;
+  outline: 2px solid #445162;
+}
+.card__first-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 20px 0 20px 0;
+}
+.card__second-title {
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #445162;
+  background-color: #fff;
+  padding: 25px 0px 20px 0px;
+  min-width: 260px;
+  width: 100%;
+  /* не совсем понимаю почему я это должен указывать..... */
+  text-align: center;
+
+  /* width: 100%; */
+  /* justify-content: center; */
+}
+.card__text-wrap {
+  background-color: #445162;
+  max-width: 200px;
+  padding-top: 19px;
+  min-height: 317px;
+  padding-bottom: 13px;
+}
+.card__text-wrap > p:nth-child(1n + 1) {
+  margin-bottom: 20px;
+}
+.card__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+.card__button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #445161;
+
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 13px 50px 13px 50px;
+  text-align: center;
+}
+.card__wrapper-butt {
+  padding-bottom: 30px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  min-height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__companis-name {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #445162;
+}

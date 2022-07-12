@@ -1,9 +1,7 @@
-#Hello)
+# Hello)
 
 ___
-task9  - maket CarRepair and Doggie
 
-[link на скрин](http://joxi.ru/krDWVRyHGxVlRA)
 
 
 ___
@@ -17,3 +15,7 @@ ___
 * Свойство background
 * Псевдоелементы псевдоклассы
 * BEM
+* position
+* transform
+* animation
+* FLEX   <---------
